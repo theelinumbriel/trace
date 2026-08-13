@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -22,10 +23,21 @@ const ATTRIBUTIONS = [
   },
 ];
 
-export function SiteFooter() {
+function FooterInner() {
   const pathname = usePathname();
   if (pathname === "/scan") return null;
+  return <FooterChrome />;
+}
 
+export function SiteFooter() {
+  return (
+    <Suspense fallback={<FooterChrome />}>
+      <FooterInner />
+    </Suspense>
+  );
+}
+
+function FooterChrome() {
   return (
     <footer className="border-t border-hairline bg-paper pb-safe-4">
       <div className="mx-auto max-w-2xl space-y-4 px-5 py-10 md:px-8">

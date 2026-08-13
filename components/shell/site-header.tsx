@@ -1,15 +1,27 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Search, ScanLine } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export function SiteHeader() {
+function HeaderInner() {
   const pathname = usePathname();
   // /scan is immersive: full-viewport camera, no chrome.
   if (pathname === "/scan") return null;
+  return <HeaderChrome />;
+}
 
+export function SiteHeader() {
+  return (
+    <Suspense fallback={<HeaderChrome />}>
+      <HeaderInner />
+    </Suspense>
+  );
+}
+
+function HeaderChrome() {
   return (
     <header className="sticky top-0 z-40 border-b border-hairline bg-paper pt-safe">
       <div className="mx-auto flex h-14 max-w-2xl items-center justify-between px-5 md:px-8">
