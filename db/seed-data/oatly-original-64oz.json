@@ -1,0 +1,207 @@
+{
+  "product": {
+    "gtin": "00190646641016",
+    "upc": "190646641016",
+    "upcVerification": "verified",
+    "name": "Oatly Oatmilk The Original 64 fl oz",
+    "category": "beverage",
+    "brandKey": "oatly",
+    "manufacturerKey": "oatly",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/019/064/664/1016/front_en.208.400.jpg",
+    "description": "Refrigerated oat drink in a half-gallon carton, produced for the US market.",
+    "ingredientsText": "Oat Base (Water, Oats), Low Erucic Acid Rapeseed Oil, Dipotassium Phosphate, Calcium Carbonate, Tricalcium Phosphate, Sea Salt, Dicalcium Phosphate, Riboflavin, Vitamin A, Vitamin D2, Vitamin B12.",
+    "identityEvidenceKey": "ev-off-identity"
+  },
+  "companies": [
+    {
+      "key": "oatly",
+      "name": "Oatly",
+      "companyType": "brand",
+      "country": "SE",
+      "website": "https://www.oatly.com"
+    },
+    {
+      "key": "ya-ya-foods",
+      "name": "Ya YA Foods Corporation",
+      "companyType": "co_packer",
+      "country": "CA"
+    }
+  ],
+  "facilities": [
+    {
+      "key": "fac-millville",
+      "name": "Oatly Millville Production Facility",
+      "facilityType": "factory",
+      "companyKey": "oatly",
+      "city": "Millville",
+      "region": "New Jersey",
+      "country": "US",
+      "lat": 39.4,
+      "lng": -75.04
+    },
+    {
+      "key": "fac-ogden",
+      "name": "Ogden Production Facility (Oatly / Ya YA Foods)",
+      "facilityType": "factory",
+      "companyKey": "ya-ya-foods",
+      "city": "Ogden",
+      "region": "Utah",
+      "country": "US",
+      "lat": 41.22,
+      "lng": -111.97
+    },
+    {
+      "key": "fac-fort-worth",
+      "name": "Fort Worth Production Facility (Oatly / Ya YA Foods)",
+      "facilityType": "factory",
+      "companyKey": "ya-ya-foods",
+      "city": "Fort Worth",
+      "region": "Texas",
+      "country": "US",
+      "lat": 32.76,
+      "lng": -97.33
+    }
+  ],
+  "materials": [
+    {
+      "key": "oats",
+      "name": "Oats",
+      "category": "grain",
+      "hsCode": "100490"
+    }
+  ],
+  "productMaterials": [
+    {
+      "materialKey": "oats",
+      "role": "primary",
+      "originNote": "North American supply shed; Oatly's 2024 Sustainability Update documents a Canadian oat supply shed milled by partner Grain Millers Canada, Corp. The Canada/US split for any given carton is not disclosed.",
+      "status": "documented",
+      "confidence": 80,
+      "evidence": [
+        "ev-oatly-sust-2024"
+      ]
+    }
+  ],
+  "shipments": [],
+  "evidence": [
+    {
+      "key": "ev-off-identity",
+      "sourceName": "Open Food Facts",
+      "sourceUrl": "https://world.openfoodfacts.org/api/v3/product/00190646641016?fields=code,product_name,brands,categories,origins,manufacturing_places,image_front_url,ingredients_text",
+      "sourceType": "product_database",
+      "title": "Open Food Facts product record 0190646641016",
+      "publisher": "Open Food Facts",
+      "supportingText": "product_name: \"Oat-Milk\", brands: \"Oatly\", categories: \"Oat-based drinks\", code: \"0190646641016\", ingredients_text: \"Oat Base (Water, Oats), Low Erucic Acid Rapeseed Oil, Dipotassium Phosphate, Calcium Carbonate, Tricalcium Phosphate, Sea Salt, Dicalcium Phosphate, Riboflavin, Vitamin A, Vitamin D2, Vitamin B12.\"",
+      "reliabilityScore": 60,
+      "license": "ODbL",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-oatly-sust-2024",
+      "sourceName": "Oatly Sustainability Update 2024",
+      "sourceUrl": "https://a.storyblok.com/f/107921/x/cbdb92c917/oatly-sustainability-update-2024.pdf",
+      "sourceType": "sustainability_report",
+      "title": "Oatly Sustainability Update 2024",
+      "publisher": "Oatly Group AB",
+      "supportingText": "In Canada, Oatly expanded its partnership with Grain Millers Canada, Corp., with practices focused on biodiversity, soil health and water conservation. This program financially incentivizes farmers to adopt regenerative practices on 1,500 oat acres (approximately 5 percent) within Oatly's Canadian supply shed.",
+      "reliabilityScore": 86,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-ir-fort-worth",
+      "sourceName": "Oatly Investor Relations",
+      "sourceUrl": "https://investors.oatly.com/news-releases/news-release-details/fort-worth-chamber-commerce-welcomes-oatly-town",
+      "sourceType": "manufacturer_disclosure",
+      "title": "Fort Worth Chamber of Commerce Welcomes Oatly to Town",
+      "publisher": "Oatly Group AB",
+      "publicationDate": "2021-08-11",
+      "supportingText": "Oatly’s new factory is the third production facility for the company in North America, joining its facilities in Millville, NJ and Ogden, UT.",
+      "reliabilityScore": 84,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-ir-renewable-na",
+      "sourceName": "Oatly Investor Relations",
+      "sourceUrl": "https://investors.oatly.com/news-releases/news-release-details/oatly-transitions-north-america-production-facilities-100",
+      "sourceType": "manufacturer_disclosure",
+      "title": "Oatly Transitions North America Production Facilities To 100% Renewable Electricity For 2021",
+      "publisher": "Oatly Group AB",
+      "publicationDate": "2022-03-31",
+      "supportingText": "announced today that for 2021, its two North American production facilities, located in Millville, NJ and Ogden, UT sourced 100% renewable electricity for the first time.",
+      "reliabilityScore": 84,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-mfgdive-yaya",
+      "sourceName": "Manufacturing Dive",
+      "sourceUrl": "https://www.manufacturingdive.com/news/oatly-ya-ya-foods-american-partnership/639537/",
+      "sourceType": "news_media",
+      "title": "Oatly sells two plants as part of hybrid manufacturing model",
+      "publisher": "Industry Dive",
+      "publicationDate": "2023-01-06",
+      "supportingText": "Oatly will sell two of its production facilities as part of a hybrid manufacturing partnership with Ya YA Foods Corporation, the companies announced on Tuesday. Ya YA Foods will take over most assets, including equipment, at the plant-based food manufacturer’s Utah and Texas facilities as part of the $98.1 million sale",
+      "reliabilityScore": 62,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-target-listing",
+      "sourceName": "Target",
+      "sourceUrl": "https://www.target.com/p/oatly-original-oatmilk-0-5gal/-/A-53328399",
+      "sourceType": "retailer_listing",
+      "title": "Oatly Original Oatmilk Chilled Non-Dairy Milk - 64 fl oz",
+      "publisher": "Target Corporation",
+      "supportingText": "It's made fresh from 100% gluten-free oats and enriched with calcium. It has amazing beta-glucans (big, scientific word for soluble fiber from oats), and is naturally low in saturated fat.",
+      "reliabilityScore": 50,
+      "needsVerification": false
+    }
+  ],
+  "events": [
+    {
+      "key": "origin-oats-na",
+      "eventType": "material_origin",
+      "locationLabel": "North America (U.S. & Canada)",
+      "lat": 51.21,
+      "lng": -102.46,
+      "status": "documented",
+      "confidence": 80,
+      "evidenceSummary": "Oatly's 2024 Sustainability Update documents North American oat sourcing: the company reports supply-shed-level emission factors for oats sourced in Canada and an expanded regenerative-agriculture partnership with its Canadian oat milling partner, Grain Millers Canada, Corp. (Yorkton, SK area). The exact farms, and the Canada/US split for the oats in any specific carton, are not disclosed.",
+      "evidence": [
+        "ev-oatly-sust-2024"
+      ]
+    },
+    {
+      "key": "mfg-us-plant",
+      "eventType": "manufacturing",
+      "companyKey": "oatly",
+      "locationLabel": "Millville, NJ / Ogden, UT / Fort Worth, TX",
+      "status": "documented",
+      "confidence": 75,
+      "evidenceSummary": "Production took place at ONE OF Oatly's three disclosed North American facilities: Millville, NJ; Ogden, UT; or Fort Worth, TX (Ogden and Fort Worth are operated under a hybrid manufacturing partnership with co-packer Ya YA Foods, with Oatly retaining its oat-base production). The specific plant for this carton is printed as a batch code on the carton and is not identifiable at the product-type level, so no single facility is assigned here.",
+      "evidence": [
+        "ev-ir-fort-worth",
+        "ev-ir-renewable-na",
+        "ev-mfgdive-yaya"
+      ]
+    },
+    {
+      "key": "dist-us",
+      "eventType": "distribution",
+      "locationLabel": "United States",
+      "lat": 39.8283,
+      "lng": -98.5795,
+      "status": "inferred",
+      "confidence": 52,
+      "evidenceSummary": "Inferred from retailer listings: Target lists this exact UPC (190646641016) as a chilled grocery item available nationwide, which implies distribution through US refrigerated grocery channels. The specific distributors, distribution centers, and lanes are not publicly documented.",
+      "inferenceBasis": "National retailer listings carry this UPC as a refrigerated item (Target listing A-53328399 verified live with matching UPC 190646641016); nationwide chilled availability implies US cold-chain distribution, though no distributor-level records are public.",
+      "evidence": [
+        "ev-target-listing"
+      ]
+    }
+  ],
+  "bestPath": [
+    "origin-oats-na",
+    "mfg-us-plant",
+    "dist-us"
+  ],
+  "altPaths": []
+}
