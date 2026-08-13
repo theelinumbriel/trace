@@ -1,0 +1,186 @@
+{
+  "product": {
+    "gtin": "00850687110505",
+    "upc": "850687110505",
+    "upcVerification": "verified",
+    "name": "California Olive Ranch 100% California Extra Virgin Olive Oil 16.9 fl oz",
+    "category": "olive-oil",
+    "brandKey": "california-olive-ranch",
+    "manufacturerKey": "california-olive-ranch",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/085/068/711/0505/front_en.23.400.jpg",
+    "description": "Certified extra virgin olive oil pressed entirely from olives grown in California's Sacramento Valley and milled at California Olive Ranch's Artois, CA facility — an all-domestic supply chain with no export, freight, or import legs. This is the deliberate contrast to the brand's separate 'Global Blend' line, which explicitly blends imported olive oils with California oil; the '100% California' line does not.",
+    "ingredientsText": "EXTRA VIRGIN OLIVE OIL",
+    "identityEvidenceKey": "ev-off-identity"
+  },
+  "companies": [
+    {
+      "key": "california-olive-ranch",
+      "name": "California Olive Ranch, Inc.",
+      "companyType": "brand",
+      "country": "US",
+      "website": "https://www.californiaoliveranch.com"
+    }
+  ],
+  "facilities": [
+    {
+      "key": "artois-mill",
+      "name": "California Olive Ranch Artois Mill",
+      "facilityType": "mill",
+      "companyKey": "california-olive-ranch",
+      "city": "Artois",
+      "region": "California",
+      "country": "US",
+      "lat": 39.62,
+      "lng": -122.19
+    }
+  ],
+  "materials": [
+    {
+      "key": "olives-california",
+      "name": "California-grown olives",
+      "category": "produce",
+      "hsCode": "070992"
+    }
+  ],
+  "productMaterials": [
+    {
+      "materialKey": "olives-california",
+      "role": "primary",
+      "originCountry": "US",
+      "originNote": "Grown on California Olive Ranch's own ranches and by contract grower partners around Oroville, Artois, and Corning in Northern California.",
+      "status": "documented",
+      "confidence": 88,
+      "evidence": [
+        "ev-cor-product",
+        "ev-kqed-harvest",
+        "ev-off-identity"
+      ]
+    }
+  ],
+  "shipments": [],
+  "evidence": [
+    {
+      "key": "ev-off-identity",
+      "sourceName": "Open Food Facts",
+      "sourceUrl": "https://world.openfoodfacts.org/api/v3/product/00850687110505?fields=code,product_name,brands,categories,origins,manufacturing_places,image_front_url,ingredients_text",
+      "sourceType": "product_database",
+      "title": "Open Food Facts API v3 record for 0850687110505",
+      "publisher": "Open Food Facts",
+      "supportingText": "product_name: \"100% California Extra Virgin Olive Oil\", brands: \"California Olive Ranch\", categories: \"Extra-virgin olive oils\", origins: \"United States\", manufacturing_places: \"California, United States\", ingredients_text: \"EXTRA VIRGIN OLIVE OIL\"",
+      "reliabilityScore": 60,
+      "license": "ODbL",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-cor-product",
+      "sourceName": "California Olive Ranch product page",
+      "sourceUrl": "https://www.californiaoliveranch.com/products/100-california-everyday",
+      "sourceType": "manufacturer_disclosure",
+      "title": "100% California Extra Virgin Olive Oil — Everyday (product page)",
+      "publisher": "California Olive Ranch",
+      "supportingText": "Cold Pressed and sourced from our farms and grower partners here in California.",
+      "reliabilityScore": 85,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-cor-story",
+      "sourceName": "California Olive Ranch — Our Story",
+      "sourceUrl": "https://www.californiaoliveranch.com/our-story",
+      "sourceType": "manufacturer_disclosure",
+      "title": "Our Story | California Olive Ranch",
+      "publisher": "California Olive Ranch",
+      "supportingText": "We have been pioneers in California olive farming for over 25 years",
+      "reliabilityScore": 82,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-kqed-harvest",
+      "sourceName": "KQED Bay Area Bites",
+      "sourceUrl": "https://www.kqed.org/bayareabites/52147/inside-california-olive-ranch-during-harvest",
+      "sourceType": "news_media",
+      "title": "Inside California Olive Ranch during Harvest",
+      "publisher": "KQED",
+      "publicationDate": "2012-12-05",
+      "supportingText": "About 60 miles north of Sacramento though, in the small towns of Oroville, Artois, and Corning, you'll find some good people making the real McCoy. [...] Because the olives only travel about 35 minutes to the mill, they are pressed into fresh extra virgin olive oil within a couple of hours of being plucked from the tree.",
+      "reliabilityScore": 60,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-farmprogress-artois",
+      "sourceName": "Farm Progress",
+      "sourceUrl": "https://www.farmprogress.com/farm-business/artois-calif-destined-to-be-u-s-olive-oil-capital",
+      "sourceType": "news_media",
+      "title": "Artois, Calif. Destined to be U.S. olive oil capital",
+      "publisher": "Farm Progress",
+      "supportingText": "[Excerpt pending verification] Farm Progress trade-press article (page returns 403 to automated fetch) describing California Olive Ranch's state-of-the-art olive oil mill at Artois in Glenn County, California; per search-index snippets it reports the planting of about 500,000 olive trees on 883 acres near Artois and frames Artois as the emerging center of U.S. olive oil production.",
+      "reliabilityScore": 55,
+      "needsVerification": true
+    },
+    {
+      "key": "ev-target-listing",
+      "sourceName": "Target.com",
+      "sourceUrl": "https://www.target.com/p/california-olive-ranch-100-ca-extra-virgin-olive-oil-16-9-fl-oz/-/A-79399468",
+      "sourceType": "retailer_listing",
+      "title": "California Olive Ranch 100% CA Extra Virgin Olive Oil - 16.9 fl oz : Target",
+      "publisher": "Target Corporation",
+      "supportingText": "California Olive Ranch 100% CA Extra Virgin Olive Oil - 16.9 fl oz",
+      "reliabilityScore": 50,
+      "needsVerification": false
+    }
+  ],
+  "events": [
+    {
+      "key": "origin-olives",
+      "eventType": "material_origin",
+      "companyKey": "california-olive-ranch",
+      "locationLabel": "Northern California",
+      "lat": 39.69,
+      "lng": -121.98,
+      "status": "documented",
+      "confidence": 88,
+      "evidenceSummary": "The brand's own product page states the oil is 'Cold Pressed and sourced from our farms and grower partners here in California,' and KQED's harvest feature places the growing operations in the towns of Oroville, Artois, and Corning, about 60 miles north of Sacramento. Open Food Facts independently records origins as United States. This line is the all-domestic counterpart to the brand's imported 'Global Blend'.",
+      "evidence": [
+        "ev-cor-product",
+        "ev-kqed-harvest",
+        "ev-off-identity"
+      ]
+    },
+    {
+      "key": "mfg-artois",
+      "eventType": "processing",
+      "companyKey": "california-olive-ranch",
+      "facilityKey": "artois-mill",
+      "locationLabel": "Artois, California",
+      "lat": 39.62,
+      "lng": -122.19,
+      "status": "documented",
+      "confidence": 85,
+      "evidenceSummary": "Milling and bottling happen at California Olive Ranch's mill in Artois (Glenn County), CA. KQED's on-site harvest report describes olives traveling about 35 minutes from orchard to the mill and being pressed within hours; a Farm Progress trade-press article on the Artois mill corroborates but could not be fetched for a verbatim excerpt (flagged needs-verification).",
+      "evidence": [
+        "ev-kqed-harvest",
+        "ev-farmprogress-artois",
+        "ev-cor-story"
+      ]
+    },
+    {
+      "key": "dist-us",
+      "eventType": "distribution",
+      "locationLabel": "United States",
+      "lat": 39.83,
+      "lng": -98.58,
+      "status": "inferred",
+      "confidence": 58,
+      "evidenceSummary": "The bottle is stocked as a standard shelf item by national grocery retailers — Target lists this exact 16.9 fl oz item in stock with shipping and store pickup — which implies nationwide grocery distribution out of the brand's California operations. No public distributor or warehouse records identify the specific distribution network.",
+      "inferenceBasis": "National retail availability (verifiable Target.com listing for this exact UPC/size) implies US-wide grocery distribution; the specific distributors and DC locations are not publicly documented.",
+      "evidence": [
+        "ev-target-listing"
+      ]
+    }
+  ],
+  "bestPath": [
+    "origin-olives",
+    "mfg-artois",
+    "dist-us"
+  ],
+  "altPaths": []
+}

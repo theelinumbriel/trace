@@ -1,0 +1,116 @@
+{
+  "product": {
+    "gtin": "00078742351926",
+    "upc": "078742351926",
+    "upcVerification": "verified",
+    "name": "Great Value Purified Drinking Water",
+    "category": "beverage",
+    "brandKey": "walmart",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/007/874/235/1926/front_en.17.400.jpg",
+    "ingredientsText": "Water",
+    "identityEvidenceKey": "ev-off"
+  },
+  "companies": [
+    {
+      "key": "walmart",
+      "name": "Walmart Inc.",
+      "companyType": "retailer",
+      "country": "US",
+      "website": "https://www.walmart.com"
+    }
+  ],
+  "facilities": [
+    {
+      "key": "walmart-hq-bentonville",
+      "name": "Walmart Inc. Home Office",
+      "facilityType": "headquarters",
+      "companyKey": "walmart",
+      "city": "Bentonville",
+      "region": "Arkansas",
+      "country": "US",
+      "lat": 36.37,
+      "lng": -94.21
+    }
+  ],
+  "materials": [],
+  "productMaterials": [],
+  "shipments": [],
+  "evidence": [
+    {
+      "key": "ev-off",
+      "sourceName": "Open Food Facts",
+      "sourceUrl": "https://world.openfoodfacts.org/api/v3/product/00078742351926",
+      "sourceType": "product_database",
+      "title": "Open Food Facts — Purified Drinking Water (Great Value), barcode 0078742351926",
+      "supportingText": "code: \"0078742351926\", product_name: \"Purified Drinking Water\", brands: \"Great Value\", categories: \"Spring waters, Unsweetened beverages\", ingredients_text: \"Water\"",
+      "reliabilityScore": 60,
+      "license": "ODbL",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-fdc",
+      "sourceName": "USDA FoodData Central",
+      "sourceUrl": "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=078742038667&dataType=Branded",
+      "sourceType": "government_record",
+      "title": "USDA FoodData Central — Branded record, GREAT VALUE Purified Drinking Water (sibling GTIN 078742038667)",
+      "publicationDate": "2021-10-28",
+      "supportingText": "\"description\":\"PURIFIED DRINKING WATER\" ... \"brandOwner\":\"Wal-Mart Stores, Inc.\" ... \"brandName\":\"GREAT VALUE\" ... \"gtinUpc\":\"078742038667\" — note: the exact UPC 078742351926 returned totalHits 0 in FDC, so this cites a sibling Great Value water GTIN under the same 078742 prefix.",
+      "reliabilityScore": 90,
+      "license": "CC0",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-gs1",
+      "sourceName": "GS1 US",
+      "sourceUrl": "https://www.gs1us.org/tools/gs1-company-database-gepir",
+      "sourceType": "gs1_registry",
+      "title": "GS1 US Company Database (GEPIR) — prefix 0078742",
+      "supportingText": "[Excerpt pending verification] GS1 US Company Database (GEPIR) lookup for GS1 Company Prefix 0078742 returns licensee Walmart Inc., Bentonville, AR, United States. Hand-run web UI lookup is a documented build-time step; the tool has no citable stable URL per result.",
+      "reliabilityScore": 87,
+      "license": "proprietary",
+      "needsVerification": true
+    }
+  ],
+  "events": [
+    {
+      "key": "origin-water",
+      "eventType": "material_origin",
+      "locationLabel": "Unknown",
+      "status": "unknown",
+      "confidence": 0,
+      "evidenceSummary": "Private-label water; the source is printed per-bottle by the bottling plant and varies. Not determinable at type level.",
+      "evidence": []
+    },
+    {
+      "key": "mfg-bottling",
+      "eventType": "manufacturing",
+      "locationLabel": "Unknown",
+      "status": "unknown",
+      "confidence": 0,
+      "evidenceSummary": "Walmart does not disclose the co-packer for this UPC.",
+      "evidence": []
+    },
+    {
+      "key": "dist-us",
+      "eventType": "distribution",
+      "companyKey": "walmart",
+      "facilityKey": "walmart-hq-bentonville",
+      "locationLabel": "Bentonville, Arkansas",
+      "lat": 36.37,
+      "lng": -94.21,
+      "status": "documented",
+      "confidence": 82,
+      "evidenceSummary": "USDA FoodData Central branded records across the 078742 prefix list brand owner Wal-Mart Stores, Inc. (brand GREAT VALUE), and the GS1 US company database shows prefix 0078742 licensed to Walmart Inc. Walmart owns the Great Value brand and distributes it through its US store and fulfillment network from its Bentonville, Arkansas headquarters.",
+      "evidence": [
+        "ev-fdc",
+        "ev-gs1"
+      ]
+    }
+  ],
+  "bestPath": [
+    "origin-water",
+    "mfg-bottling",
+    "dist-us"
+  ],
+  "altPaths": []
+}

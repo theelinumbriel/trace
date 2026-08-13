@@ -22,6 +22,9 @@ without `DATABASE_URL` the app runs on a file-backed [PGlite](https://pglite.dev
 database in `./.pglite`. The Map tab needs `NEXT_PUBLIC_MAPBOX_TOKEN`
 (it degrades to a located-stages list without one).
 
+> PGlite is single-process: stop the dev server before running
+> `npm run db:seed`, then start it again. (Irrelevant with hosted Postgres.)
+
 Visit **/codes** for scannable barcodes of every seeded product — open it on
 one screen and scan with your phone.
 

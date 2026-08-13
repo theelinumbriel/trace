@@ -1,0 +1,268 @@
+{
+  "product": {
+    "gtin": "00858010005580",
+    "upc": "858010005580",
+    "upcVerification": "verified",
+    "name": "Tony's Chocolonely Milk Chocolate 32% 6.35 oz",
+    "category": "chocolate",
+    "brandKey": "tonys",
+    "manufacturerKey": "barry-callebaut",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/085/801/000/5580/front_en.21.400.jpg",
+    "description": "Tony's Chocolonely 32% milk chocolate big bar (6.35 oz), made with cocoa sourced through Tony's Open Chain from partner cooperatives in Ghana and Côte d'Ivoire and produced in Belgium.",
+    "ingredientsText": "MILK CHOCOLATE (SUGAR, WHOLE MILK POWDER, COCOA BUTTER, CHOCOLATE LIQUOR, SOY LECITHIN)",
+    "identityEvidenceKey": "ev-off-identity"
+  },
+  "companies": [
+    {
+      "key": "tonys",
+      "name": "Tony's Chocolonely",
+      "companyType": "brand",
+      "country": "NL",
+      "website": "https://tonyschocolonely.com"
+    },
+    {
+      "key": "tonys-us",
+      "name": "Tony's Chocolonely Inc.",
+      "companyType": "importer",
+      "country": "US",
+      "parentKey": "tonys"
+    },
+    {
+      "key": "barry-callebaut",
+      "name": "Barry Callebaut",
+      "companyType": "manufacturer",
+      "country": "CH",
+      "website": "https://www.barry-callebaut.com"
+    },
+    {
+      "key": "open-chain-coops",
+      "name": "Tony's Open Chain partner cooperatives",
+      "companyType": "cooperative",
+      "website": "https://www.tonysopenchain.com"
+    }
+  ],
+  "facilities": [
+    {
+      "key": "wieze-factory",
+      "name": "Barry Callebaut Wieze factory",
+      "facilityType": "factory",
+      "companyKey": "barry-callebaut",
+      "city": "Wieze",
+      "region": "East Flanders",
+      "country": "BE",
+      "lat": 50.976,
+      "lng": 4.089
+    },
+    {
+      "key": "port-rotterdam",
+      "name": "Port of Rotterdam",
+      "facilityType": "port",
+      "city": "Rotterdam",
+      "country": "NL",
+      "lat": 51.95,
+      "lng": 4.14,
+      "unlocode": "NLRTM"
+    },
+    {
+      "key": "port-ny-nj",
+      "name": "Port of New York and New Jersey (Port Newark)",
+      "facilityType": "port",
+      "city": "Newark",
+      "region": "NJ",
+      "country": "US",
+      "lat": 40.68,
+      "lng": -74.15,
+      "unlocode": "USNYC"
+    }
+  ],
+  "materials": [
+    {
+      "key": "cocoa-beans",
+      "name": "Cocoa beans",
+      "category": "cocoa",
+      "hsCode": "1801"
+    }
+  ],
+  "productMaterials": [
+    {
+      "materialKey": "cocoa-beans",
+      "role": "primary",
+      "originNote": "Ghana & Côte d'Ivoire — sourced bean-to-bar from Tony's Open Chain partner cooperatives",
+      "status": "documented",
+      "confidence": 90,
+      "evidence": [
+        "ev-fair-report",
+        "ev-fair-article"
+      ]
+    }
+  ],
+  "shipments": [
+    {
+      "key": "ship-rtm-nyc",
+      "originPortKey": "port-rotterdam",
+      "destinationPortKey": "port-ny-nj",
+      "transportMode": "ocean",
+      "hsCode": "1806",
+      "description": "Ocean freight, Rotterdam → Port of NY/NJ (Newark). Lane modeled from publicly indexed bill-of-lading summaries (shipper Tony's Chocolonely Nederland B.V., consignee Tony's Chocolonely Inc.); full customs records are behind commercial paywalls.",
+      "sourceEvidenceKey": "ev-importyeti",
+      "corroboratingEvidence": [
+        "ev-panjiva"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "key": "ev-off-identity",
+      "sourceName": "Open Food Facts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/0858010005580",
+      "sourceType": "product_database",
+      "title": "Open Food Facts record — Milk Chocolate (0858010005580)",
+      "publisher": "Open Food Facts",
+      "supportingText": "product_name: \"Milk Chocolate\", brands: \"Tony's Chocolonely\", categories: \"Confectioneries, Milk chocolates\", manufacturing_places: \"Belgium\", ingredients_text: \"MILK CHOCOLATE (SUGAR, WHOLE MILK POWDER, COCOA BUTTER, CHOCOLATE LIQUOR, SOY LECITHIN)\"",
+      "reliabilityScore": 60,
+      "license": "ODbL",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-fair-report",
+      "sourceName": "Tony's Chocolonely",
+      "sourceUrl": "https://tonyschocolonely.com/pages/annual-fair-report-2024-2025",
+      "sourceType": "sustainability_report",
+      "title": "annual fair report 2024/2025",
+      "publisher": "Tony's Chocolonely",
+      "supportingText": "[Excerpt pending verification] Tony's annual FAIR report 2024/2025 page; the report body renders client-side and was not present in the fetched HTML. Per Tony's own report-summary article and press coverage, the report documents Open Chain cocoa sourcing from partner cooperatives in Côte d'Ivoire and Ghana: 32,133 farmers paid under Tony's 5 Sourcing Principles, roughly 27,000 tonnes of traceable beans, and child-labor monitoring (CLMRS) run with partner co-ops.",
+      "reliabilityScore": 82,
+      "needsVerification": true
+    },
+    {
+      "key": "ev-fair-article",
+      "sourceName": "Tony's Chocolonely",
+      "sourceUrl": "https://us.tonyschocolonely.com/blogs/serious-stuff/annual-fair-report-2024-2025-article",
+      "sourceType": "sustainability_report",
+      "title": "It’s now or never: farmers need the industry’s commitment",
+      "publisher": "Tony's Chocolonely United States",
+      "publicationDate": "2026-02-03",
+      "supportingText": "our impact grew bigger than ever before, reaching tens of thousands of cocoa-farming families in Côte d’Ivoire + Ghana … the choco fans choosing our chocolate, and our 20+ Mission Allies sourcing their cocoa ethically through Tony’s Open Chain … the child labor prevalence rate at our longest-term partner cooperatives remains below 5%",
+      "reliabilityScore": 85,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-bc-partnership",
+      "sourceName": "Barry Callebaut",
+      "sourceUrl": "https://www.barry-callebaut.com/en/about-us/media/news-stories/barry-callebaut-and-tonys-chocolonely-sign-strategic-partnership-agreement",
+      "sourceType": "manufacturer_disclosure",
+      "title": "Barry Callebaut and Tony’s Chocolonely sign strategic partnership agreement to produce chocolate from fully traceable sustainable cocoa",
+      "publisher": "Barry Callebaut",
+      "supportingText": "[Excerpt pending verification] Press release (fetch blocked by Cloudflare 403). Per its title and search-index snippets, it announces a strategic partnership under which Barry Callebaut produces chocolate for Tony's Chocolonely from fully traceable sustainable cocoa, including a dedicated cocoa butter tank at its Wieze, Belgium factory for butter from beans grown by Tony's partner cooperatives in Côte d'Ivoire and Ghana; the companies have cooperated since 2005, when Barry Callebaut began producing Tony's Fairtrade cocoa liquor.",
+      "reliabilityScore": 80,
+      "needsVerification": true
+    },
+    {
+      "key": "ev-fit-flanders",
+      "sourceName": "Flanders Investment & Trade",
+      "sourceUrl": "https://invest.flandersinvestmentandtrade.com/en/news/tonys-chocolonely-nl-invests-millions-factory-flanders",
+      "sourceType": "news_media",
+      "title": "Tony’s Chocolonely (NL) invests millions in factory in Flanders",
+      "publisher": "Invest in Flanders",
+      "publicationDate": "2023-09-06",
+      "supportingText": "The Borsbeek facility collaborates with other manufacturers in Tienen and Turnhout, using chocolate from the Barry Callebaut plant in Wieze.",
+      "reliabilityScore": 62,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-importyeti",
+      "sourceName": "ImportYeti",
+      "sourceUrl": "https://www.importyeti.com/supplier/tony-s-chocolonely",
+      "sourceType": "customs_record",
+      "title": "Tony S Chocolonely - Polonceaukade 20 1014 Da Amsterdam Nl - supplier Report - Import Yeti",
+      "publisher": "ImportYeti",
+      "supportingText": "[Excerpt pending verification] Supplier report page (fetch blocked by Cloudflare challenge). Per search-index snippets, it publicly indexes Tony S Chocolonely's U.S. ocean shipments compiled from U.S. Customs bills of lading: 130 total sea shipments, most recent 06/15/2023, estimated shipping spend about $1.9M, top customer \"IC Tony S Chocolonely\", supplier address Polonceaukade 20, 1014 DA Amsterdam, NL.",
+      "reliabilityScore": 72,
+      "needsVerification": true
+    },
+    {
+      "key": "ev-panjiva",
+      "sourceName": "Panjiva (S&P Global)",
+      "sourceUrl": "https://panjiva.com/Tony-s-Chocolonely-Inc/129294241",
+      "sourceType": "customs_record",
+      "title": "Tony's Chocolonely Inc., 215 PARK AV SOUTH 11TH FLOOR NEW YORK NY 10003-1626 US | Buyer Report — Panjiva",
+      "publisher": "Panjiva, S&P Global",
+      "supportingText": "259 U.S. shipments available for Tony's Chocolonely Inc., updated weekly since 2007 … Shipper Name: \"Tony's Chocolonely Nederland Bv\", Shipper Address: \"DANZIGERKADE 23B 1013 AP AMSTERDAM NL\", Consignee Name: \"Tony's Chocolonely Inc\", Consignee Address: \"215 PARK AV SOUTH 11TH FLOOR NEW YORK NY 10003-1626 US\", Shipment Origin: \"Netherlands\"",
+      "reliabilityScore": 76,
+      "needsVerification": false
+    }
+  ],
+  "events": [
+    {
+      "key": "origin-cocoa",
+      "eventType": "material_origin",
+      "companyKey": "open-chain-coops",
+      "locationLabel": "Ghana & Côte d'Ivoire",
+      "lat": 6.5,
+      "lng": -3.2,
+      "status": "documented",
+      "confidence": 90,
+      "evidenceSummary": "Tony's 2024/25 annual FAIR report and the brand's own report-summary article document bean-to-bar cocoa sourcing from Tony's Open Chain partner cooperatives in Côte d'Ivoire and Ghana, including farmer counts and child-labor monitoring at long-term partner co-ops. The report page renders client-side, so its excerpt is pending verification; the verbatim support comes from the brand's report article.",
+      "evidence": [
+        "ev-fair-report",
+        "ev-fair-article"
+      ]
+    },
+    {
+      "key": "mfg-wieze",
+      "eventType": "manufacturing",
+      "companyKey": "barry-callebaut",
+      "facilityKey": "wieze-factory",
+      "locationLabel": "Wieze, Belgium",
+      "lat": 50.976,
+      "lng": 4.089,
+      "status": "documented",
+      "confidence": 88,
+      "evidenceSummary": "Barry Callebaut's press release announces the strategic partnership to produce Tony's chocolate from fully traceable cocoa at its Wieze, Belgium plant (fetch blocked; excerpt pending verification). The Invest in Flanders article independently confirms Tony's bars use chocolate 'from the Barry Callebaut plant in Wieze', and the Open Food Facts record lists manufacturing_places: Belgium.",
+      "evidence": [
+        "ev-bc-partnership",
+        "ev-fit-flanders",
+        "ev-off-identity"
+      ]
+    },
+    {
+      "key": "freight-rtm-nyc",
+      "eventType": "freight",
+      "shipmentKey": "ship-rtm-nyc",
+      "locationLabel": "Rotterdam → Newark",
+      "lat": 40.68,
+      "lng": -74.15,
+      "status": "inferred",
+      "confidence": 78,
+      "evidenceSummary": "Public customs indexes show recurring Netherlands/Belgium → U.S. ocean shipments with shipper Tony's Chocolonely Nederland B.V. and consignee Tony's Chocolonely Inc. (Panjiva: 259 U.S. shipments updated weekly since 2007; ImportYeti: 130 indexed sea shipments). Search-indexed snapshots of Panjiva's public page show a sample bill of lading from port Rotterdam to the New York/Newark Area, Newark, New Jersey. Full bill-of-lading records sit behind commercial paywalls, so this leg is inferred rather than documented.",
+      "inferenceBasis": "Made-in-Belgium production (Wieze) plus publicly indexed bill-of-lading summaries on ImportYeti and Panjiva showing the Rotterdam → New York/Newark ocean lane to consignee Tony's Chocolonely Inc.; the full customs records behind those summaries are commercially paywalled, so the leg cannot be documented from primary records.",
+      "evidence": [
+        "ev-importyeti",
+        "ev-panjiva"
+      ]
+    },
+    {
+      "key": "dist-us",
+      "eventType": "distribution",
+      "companyKey": "tonys-us",
+      "locationLabel": "United States",
+      "lat": 40.7376,
+      "lng": -73.9887,
+      "status": "inferred",
+      "confidence": 64,
+      "evidenceSummary": "Panjiva's public buyer report lists 259 U.S. shipments for Tony's Chocolonely Inc., consignee at 215 Park Av South, New York; ImportYeti's supplier report names \"IC Tony S Chocolonely\" as the supplier's top customer. The consignee role on public customs indexes supports U.S. import and onward distribution by Tony's U.S. entity, but no public documents detail the downstream distribution network.",
+      "inferenceBasis": "Tony's Chocolonely Inc. is the named consignee on publicly indexed U.S. customs records; the U.S. import-and-distribution step is inferred from that consignee role because no primary distribution documents are public.",
+      "evidence": [
+        "ev-panjiva",
+        "ev-importyeti"
+      ]
+    }
+  ],
+  "bestPath": [
+    "origin-cocoa",
+    "mfg-wieze",
+    "freight-rtm-nyc",
+    "dist-us"
+  ],
+  "altPaths": []
+}

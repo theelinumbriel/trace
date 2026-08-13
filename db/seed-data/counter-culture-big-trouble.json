@@ -1,0 +1,190 @@
+{
+  "product": {
+    "gtin": "00663505002063",
+    "upc": "663505002063",
+    "upcVerification": "verified",
+    "name": "Counter Culture Coffee — Big Trouble whole bean 12 oz",
+    "category": "coffee",
+    "brandKey": "counter-culture",
+    "manufacturerKey": "counter-culture",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/066/350/500/2063/front_en.3.400.jpg",
+    "ingredientsText": "Whole bean coffee",
+    "identityEvidenceKey": "ev-off"
+  },
+  "companies": [
+    {
+      "key": "counter-culture",
+      "name": "Counter Culture Coffee, Inc.",
+      "companyType": "brand",
+      "country": "US",
+      "website": "https://counterculturecoffee.com"
+    }
+  ],
+  "facilities": [
+    {
+      "key": "fac-durham-roastery",
+      "name": "Counter Culture Coffee Roastery & Headquarters",
+      "facilityType": "factory",
+      "companyKey": "counter-culture",
+      "city": "Durham",
+      "region": "NC",
+      "country": "US",
+      "lat": 35.99,
+      "lng": -78.9
+    }
+  ],
+  "materials": [],
+  "productMaterials": [],
+  "shipments": [],
+  "evidence": [
+    {
+      "key": "ev-off",
+      "sourceName": "Open Food Facts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/0663505002063",
+      "sourceType": "product_database",
+      "title": "Open Food Facts record 0663505002063",
+      "supportingText": "product_name: \"Counter culture big trouble\", brands: \"Counter Culture Coffee\", code: \"0663505002063\", ingredients_text: \"Whole bean coffee\"",
+      "reliabilityScore": 60,
+      "license": "ODbL",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-transparency-sourcing",
+      "sourceName": "Counter Culture Coffee",
+      "sourceUrl": "https://counterculturecoffee.com/pages/transparency-report-2025",
+      "sourceType": "sustainability_report",
+      "title": "Counter Culture Coffee Transparency Report 2025 — sourcing",
+      "publisher": "Counter Culture Coffee",
+      "publicationDate": "2025-01-01",
+      "supportingText": "We processed a total of 921 coffee samples over the year, reflecting the breadth of our sourcing efforts. From these, we selected and purchased 71%, maintaining a strong focus on quality and consistency.",
+      "reliabilityScore": 86,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-big-trouble-page",
+      "sourceName": "Counter Culture Coffee",
+      "sourceUrl": "https://counterculturecoffee.com/products/big-trouble",
+      "sourceType": "manufacturer_disclosure",
+      "title": "Big Trouble product page — blend components",
+      "publisher": "Counter Culture Coffee",
+      "supportingText": "Sourced from sustainable producers across the globe, this medium-dark roast blend is expertly roasted to ensure a consistently exceptional brew every time. … 50% Puhuac, Mexico … 50% Aurora, Nicaragua",
+      "reliabilityScore": 84,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-transparency-fob",
+      "sourceName": "Counter Culture Coffee",
+      "sourceUrl": "https://counterculturecoffee.com/pages/transparency-report-2025",
+      "sourceType": "sustainability_report",
+      "title": "Counter Culture Coffee Transparency Report 2025 — FOB pricing",
+      "publisher": "Counter Culture Coffee",
+      "publicationDate": "2025-01-01",
+      "supportingText": "It reflects only the cost of the coffee at the point of export, before expenses like freight, financing, and other operating costs are added.",
+      "reliabilityScore": 86,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-durham-hq",
+      "sourceName": "Counter Culture Coffee",
+      "sourceUrl": "https://counterculturecoffee.com/learn/training-centers/durham-training-center",
+      "sourceType": "manufacturer_disclosure",
+      "title": "Durham Training Center page — Roastery & Headquarters address",
+      "publisher": "Counter Culture Coffee",
+      "supportingText": "Roastery & Headquarters … 812 Mallard Ave … Durham, NC 27701",
+      "reliabilityScore": 85,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-tastingtable",
+      "sourceName": "Tasting Table",
+      "sourceUrl": "https://www.tastingtable.com/691861/counter-culture-coffee-durham-nc-new-training-center/",
+      "sourceType": "news_media",
+      "title": "Tasting Table coverage of Counter Culture's Durham roastery",
+      "publisher": "Tasting Table",
+      "publicationDate": "2016-04-28",
+      "supportingText": "The beans are roasted to order, which means there's no set quantity that they bag each day, it just depends on how many orders are placed. … Durham is a logical choice for the facility, since the company was founded there in 1995.",
+      "reliabilityScore": 58,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-target",
+      "sourceName": "Target",
+      "sourceUrl": "https://www.target.com/p/counter-culture-big-trouble-medium-roast-whole-bean-coffee-12oz/-/A-54468795",
+      "sourceType": "retailer_listing",
+      "title": "Target listing A-54468795 — Big Trouble 12oz",
+      "publisher": "Target",
+      "supportingText": "Shop Counter Culture Big Trouble Medium Roast Whole Bean Coffee - 12oz at Target. Choose from Same Day Delivery, Drive Up or Order Pickup. Free standard shipping with $35 orders.",
+      "reliabilityScore": 50,
+      "needsVerification": false
+    }
+  ],
+  "events": [
+    {
+      "key": "origin-latam",
+      "eventType": "material_origin",
+      "locationLabel": "Mexico & Nicaragua",
+      "lat": 15.98,
+      "lng": -91.75,
+      "status": "documented",
+      "confidence": 74,
+      "evidenceSummary": "Counter Culture's 2025 Transparency Report documents relationship-based green-coffee sourcing across Latin America, and the Big Trouble product page discloses the current roast components (blend widget dated August 6–Present) as 50% Puhuac, Mexico and 50% Aurora, Nicaragua. Blend components rotate seasonally and individual farms are not identified at the product-type level, so origin is documented only at the country/community level for the current roast.",
+      "evidence": [
+        "ev-transparency-sourcing",
+        "ev-big-trouble-page"
+      ]
+    },
+    {
+      "key": "import-us",
+      "eventType": "import",
+      "locationLabel": "Port of entry unknown → Durham, NC",
+      "lat": 35.99,
+      "lng": -78.9,
+      "status": "inferred",
+      "confidence": 62,
+      "inferenceBasis": "Coffee is not commercially grown in the continental United States, and Counter Culture roasts this product at its Durham, NC roastery; therefore the green coffee must have been imported into the US. The transparency report prices coffee FOB at the point of export, confirming international freight into the US. No public record identifies the specific port of entry, so no port is claimed.",
+      "evidenceSummary": "Importation is inferred, not directly documented: the origin countries and the US roasting location are documented, but the carrier, route, and port of entry for this product's green coffee are not publicly disclosed.",
+      "evidence": [
+        "ev-transparency-fob",
+        "ev-durham-hq"
+      ]
+    },
+    {
+      "key": "roast-durham",
+      "eventType": "processing",
+      "companyKey": "counter-culture",
+      "facilityKey": "fac-durham-roastery",
+      "locationLabel": "Durham, North Carolina",
+      "lat": 35.99,
+      "lng": -78.9,
+      "status": "documented",
+      "confidence": 90,
+      "evidenceSummary": "Counter Culture publicly lists its Roastery & Headquarters at 812 Mallard Ave, Durham, NC 27701, and independent news coverage describes roast-to-order production at the 24,000-square-foot Durham roastery, where the company was founded in 1995.",
+      "evidence": [
+        "ev-durham-hq",
+        "ev-tastingtable"
+      ]
+    },
+    {
+      "key": "dist-us",
+      "eventType": "distribution",
+      "companyKey": "counter-culture",
+      "locationLabel": "United States retail",
+      "lat": 39.83,
+      "lng": -98.58,
+      "status": "inferred",
+      "confidence": 55,
+      "inferenceBasis": "The 12 oz Big Trouble SKU appears in live national retailer listings (Target item A-54468795), indicating distribution from the Durham roastery into US grocery retail. Specific distributors, warehouse locations, and routes are not publicly documented.",
+      "evidenceSummary": "US retail distribution is inferred from retailer listings; the distribution network itself (distributors, DCs, transport legs) is not publicly disclosed.",
+      "evidence": [
+        "ev-target"
+      ]
+    }
+  ],
+  "bestPath": [
+    "origin-latam",
+    "import-us",
+    "roast-durham",
+    "dist-us"
+  ],
+  "altPaths": []
+}

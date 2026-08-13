@@ -1,0 +1,142 @@
+{
+  "product": {
+    "gtin": "00039978001542",
+    "upc": "039978001542",
+    "upcVerification": "verified",
+    "name": "Bob's Red Mill Old Fashioned Rolled Oats 16 oz",
+    "category": "packaged-food",
+    "brandKey": "bobs-red-mill",
+    "ingredientsText": "WHOLE GRAIN OATS.",
+    "identityEvidenceKey": "ev-fdc"
+  },
+  "companies": [
+    {
+      "key": "bobs-red-mill",
+      "name": "Bob's Red Mill Natural Foods, Inc.",
+      "companyType": "brand",
+      "country": "US",
+      "website": "https://www.bobsredmill.com"
+    }
+  ],
+  "facilities": [
+    {
+      "key": "fac-brm-milwaukie",
+      "name": "Bob's Red Mill manufacturing, warehousing and headquarters facility",
+      "facilityType": "factory",
+      "companyKey": "bobs-red-mill",
+      "city": "Milwaukie",
+      "region": "Oregon",
+      "country": "US",
+      "lat": 45.44,
+      "lng": -122.64
+    }
+  ],
+  "materials": [],
+  "productMaterials": [],
+  "shipments": [],
+  "evidence": [
+    {
+      "key": "ev-fdc",
+      "sourceName": "USDA FoodData Central",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/2456388/nutrients",
+      "sourceType": "government_record",
+      "title": "USDA FoodData Central Branded Foods record — BOB'S RED MILL, ROLLED OATS (FDC ID 2456388)",
+      "publisher": "U.S. Department of Agriculture, Agricultural Research Service",
+      "publicationDate": "2023-01-26",
+      "supportingText": "gtinUpc: \"039978001542\", brandOwner: \"Bob's Red Mill Natural Foods, Inc.\", brandName: \"BOB'S RED MILL\", description: \"BOB'S RED MILL, ROLLED OATS\", ingredients: \"WHOLE GRAIN OATS.\", packageWeight: \"16 oz/1 lbs/453 g\", marketCountry: \"United States\"",
+      "reliabilityScore": 93,
+      "license": "CC0-1.0",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-off",
+      "sourceName": "Open Food Facts",
+      "sourceUrl": "https://world.openfoodfacts.org/api/v3/product/00039978001542",
+      "sourceType": "product_database",
+      "title": "Open Food Facts product record 0039978001542 — Rolled Oats",
+      "publisher": "Open Food Facts",
+      "supportingText": "product_name: \"Rolled Oats\", brands: \"Bob's Red Mill, Bob's Red Mill Natural Foods  Inc.\", ingredients_text: \"WHOLE GRAIN OATS.\", code: \"0039978001542\"",
+      "reliabilityScore": 60,
+      "license": "ODbL",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-wiki-brm-location",
+      "sourceName": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bob%27s_Red_Mill",
+      "sourceType": "other",
+      "title": "Wikipedia — Bob's Red Mill",
+      "publisher": "Wikimedia Foundation",
+      "supportingText": "Bob's Red Mill is an American brand of whole-grain food marketed by employee-owned American company Bob's Red Mill Natural Foods of Milwaukie, Oregon.",
+      "reliabilityScore": 60,
+      "license": "CC-BY-SA-4.0",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-wiki-brm-facility",
+      "sourceName": "Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bob%27s_Red_Mill",
+      "sourceType": "other",
+      "title": "Wikipedia — Bob's Red Mill",
+      "publisher": "Wikimedia Foundation",
+      "supportingText": "In June 2007, the company announced that it was moving both its administrative headquarters, and manufacturing and warehousing facility to a 325,000-square-foot (30,200 m2) building from its original 130,000-square-foot (12,000 m2) facility, which it planned to sell and sub-lease.",
+      "reliabilityScore": 60,
+      "license": "CC-BY-SA-4.0",
+      "needsVerification": false
+    },
+    {
+      "key": "ev-brm-oats-page",
+      "sourceName": "Bob's Red Mill",
+      "sourceUrl": "https://www.bobsredmill.com/products/oats",
+      "sourceType": "manufacturer_disclosure",
+      "title": "Bob's Red Mill — Whole Grain Oats & Oatmeal (oats catalog page)",
+      "publisher": "Bob's Red Mill Natural Foods",
+      "supportingText": "Premium whole grain oats—one simple ingredient with endless possibilities.",
+      "reliabilityScore": 84,
+      "needsVerification": false
+    }
+  ],
+  "events": [
+    {
+      "key": "origin-oats",
+      "eventType": "material_origin",
+      "locationLabel": "Undisclosed growing regions",
+      "status": "unknown",
+      "confidence": 0,
+      "evidenceSummary": "Bob's Red Mill does not publicly disclose growing regions for this SKU. We will not guess.",
+      "evidence": []
+    },
+    {
+      "key": "mill-milwaukie",
+      "eventType": "processing",
+      "companyKey": "bobs-red-mill",
+      "facilityKey": "fac-brm-milwaukie",
+      "locationLabel": "Milwaukie, Oregon",
+      "lat": 45.44,
+      "lng": -122.64,
+      "status": "documented",
+      "confidence": 87,
+      "evidenceSummary": "Bob's Red Mill mills and packages its products at its combined manufacturing, warehousing and headquarters facility in Milwaukie, Oregon — a 325,000-square-foot building it announced in 2007 — and markets this oat line directly on its own catalog page. Lot-level proof that this specific 16 oz bag was packed at Milwaukie is not published, so this stays documented rather than verified.",
+      "evidence": [
+        "ev-wiki-brm-location",
+        "ev-wiki-brm-facility",
+        "ev-brm-oats-page"
+      ]
+    },
+    {
+      "key": "dist-unknown",
+      "eventType": "distribution",
+      "locationLabel": "Distribution routing unknown",
+      "status": "unknown",
+      "confidence": 0,
+      "evidenceSummary": "Distribution routing for this SKU is not publicly documented. Which distributors, warehouses, carriers, and routes move a given bag from the Milwaukie mill to a retail shelf is undisclosed; the USDA record lists the market country as the United States and nothing more specific is known.",
+      "evidence": []
+    }
+  ],
+  "bestPath": [
+    "origin-oats",
+    "mill-milwaukie",
+    "dist-unknown"
+  ],
+  "altPaths": []
+}

@@ -1,0 +1,114 @@
+{
+  "product": {
+    "gtin": "00888336749295",
+    "upc": "888336749295",
+    "upcVerification": "verified",
+    "name": "Patagonia P-6 Logo Organic Cotton T-Shirt",
+    "category": "clothing",
+    "brandKey": "patagonia",
+    "description": "Regular-fit crewneck T-shirt in 100% organic cotton jersey with the Patagonia P-6 logo graphic. Note: apparel GTINs are assigned per style-size-color variant, so this UPC identifies a single variant of the P-6 Logo tee; the provenance trace below is shared at the style level.",
+    "identityEvidenceKey": "ev-upcitemdb"
+  },
+  "companies": [
+    {
+      "key": "patagonia",
+      "name": "Patagonia, Inc.",
+      "companyType": "brand",
+      "country": "US",
+      "website": "https://www.patagonia.com"
+    }
+  ],
+  "facilities": [],
+  "materials": [],
+  "productMaterials": [],
+  "shipments": [],
+  "evidence": [
+    {
+      "key": "ev-upcitemdb",
+      "sourceName": "UPCitemdb",
+      "sourceUrl": "https://www.upcitemdb.com/upc/888336749295",
+      "sourceType": "product_database",
+      "title": "UPC 888336749295 — UPCitemdb",
+      "publisher": "UPCitemdb",
+      "supportingText": "title: \"Men's Patagonia 'P-6 Logo' Organic Cotton T-Shirt, Size X-Large - Blue\", brand: \"Patagonia\", upc: \"888336749295\", category: \"Apparel & Accessories > Clothing > Shirts & Tops\", description: \"100% Texas co-op organic cotton jersey forms this regular-fit crewneck T-shirt featuring classic Patagonia graphics. Style Name: Patagonia 'P-6 Logo' Organic Cotton T-Shirt.\"",
+      "reliabilityScore": 60,
+      "needsVerification": false
+    },
+    {
+      "key": "ev-pat-suppliers",
+      "sourceName": "Patagonia",
+      "sourceUrl": "https://www.patagonia.com/factories-farms-material-suppliers/",
+      "sourceType": "manufacturer_disclosure",
+      "title": "Factories, Farms and Material Suppliers",
+      "publisher": "Patagonia",
+      "supportingText": "[Excerpt pending verification] Patagonia's supply-chain disclosure page; per search-index snippets it describes 'due diligence activities to promote and sustain fair labor practices, safe working conditions and environmental responsibility in the finished-goods factories, farms and material suppliers', including a Material Traceability program, and links a directory of supply-chain partners in countries including Taiwan, Vietnam, India and Nicaragua. patagonia.com returned a 404/anti-bot placeholder to automated fetches, so no verbatim excerpt could be captured.",
+      "reliabilityScore": 85,
+      "needsVerification": true
+    },
+    {
+      "key": "ev-pat-supplier-list",
+      "sourceName": "Patagonia",
+      "sourceUrl": "https://eu.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw55edb3c8/PDF-EU/Patagonia-Finished-Goods-Supplier-List-May-2020.xlsx",
+      "sourceType": "manufacturer_disclosure",
+      "title": "Patagonia Finished Goods Supplier List (May 2020)",
+      "publisher": "Patagonia",
+      "publicationDate": "2020-05-01",
+      "supportingText": "[Excerpt pending verification] Spreadsheet listing Patagonia's finished-goods suppliers as of May 2020 (factory names, locations and countries). The download URL now serves an anti-bot failover HTML page ('Hang Tight! Routing to checkout...') to automated fetches, so no cell contents could be excerpted. Score reflects the document's age.",
+      "reliabilityScore": 55,
+      "needsVerification": true
+    },
+    {
+      "key": "ev-osh",
+      "sourceName": "Open Supply Hub",
+      "sourceUrl": "https://opensupplyhub.org",
+      "sourceType": "other",
+      "title": "Open Supply Hub",
+      "publisher": "Open Supply Hub",
+      "supportingText": "Open Supply Hub (OS Hub) is an accessible, collaborative, supply chain mapping platform, used and populated by stakeholders across sectors and supply chains.",
+      "reliabilityScore": 65,
+      "license": "CC-BY-SA-4.0",
+      "needsVerification": false
+    }
+  ],
+  "events": [
+    {
+      "key": "origin-cotton",
+      "eventType": "material_origin",
+      "locationLabel": "Organic cotton program (countries not disclosed)",
+      "status": "documented",
+      "confidence": 70,
+      "evidenceSummary": "Patagonia documents an organic-cotton program and discloses its farms and material suppliers at the program level, but it does not disclose growing countries per product; the cotton in this specific shirt cannot be tied to a country or farm from public records. The most recent machine-readable supplier list found is from May 2020, and its staleness is reflected in its reliability score.",
+      "evidence": [
+        "ev-pat-suppliers",
+        "ev-pat-supplier-list"
+      ]
+    },
+    {
+      "key": "mfg-cut-sew",
+      "eventType": "manufacturing",
+      "locationLabel": "Cut & sew factory unknown",
+      "status": "unknown",
+      "confidence": 0,
+      "evidenceSummary": "Patagonia discloses its factory list but does not publicly map products to factories; identifying the factory would require the style's Footprint data or item-level traceability.",
+      "evidence": []
+    },
+    {
+      "key": "import-us",
+      "eventType": "import",
+      "locationLabel": "United States (port of entry unknown)",
+      "status": "inferred",
+      "confidence": 56,
+      "inferenceBasis": "Patagonia's disclosed finished-goods factories are predominantly outside the US, per the company's contributed factory list mirrored on Open Supply Hub, so a US-market unit of this style almost certainly entered the country as an import; no customs or shipment record ties this style to a specific vessel, port or entry date.",
+      "evidenceSummary": "US import is inferred rather than documented: the structured copy of Patagonia's factory disclosure shows finished-goods production concentrated abroad, but no public record links this style to a specific import shipment or port of entry.",
+      "evidence": [
+        "ev-osh"
+      ]
+    }
+  ],
+  "bestPath": [
+    "origin-cotton",
+    "mfg-cut-sew",
+    "import-us"
+  ],
+  "altPaths": []
+}
