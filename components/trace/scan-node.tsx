@@ -14,13 +14,34 @@ import {
 
 const STORAGE_KEY = "trace.locality";
 
-export function useLocality(): [string | null, (v: string) => void] {
-  const [locality, setLocality] = useState<string | null>(null);
+export type StoredLocality = {
+  label: string;
+  /** Client-rounded to 2 decimals (~1.1 km) — never precise. */
+  lat: number;
+  lng: number;
+};
+
+export function readStoredLocality(): StoredLocality | null {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as StoredLocality;
+    return typeof parsed.label === "string" ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+export function useLocality(): [
+  StoredLocality | null,
+  (v: StoredLocality) => void,
+] {
+  const [locality, setLocality] = useState<StoredLocality | null>(null);
   useEffect(() => {
-    setLocality(localStorage.getItem(STORAGE_KEY));
+    setLocality(readStoredLocality());
   }, []);
-  const save = (v: string) => {
-    localStorage.setItem(STORAGE_KEY, v);
+  const save = (v: StoredLocality) => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(v));
     setLocality(v);
   };
   return [locality, save];
@@ -40,7 +61,7 @@ type BigDataCloudResponse = {
  *    endpoint terms) — precise coordinates never reach our servers
  *  - only the display string is kept
  */
-async function resolveLocality(): Promise<string> {
+async function resolveLocality(): Promise<StoredLocality> {
   const pos = await new Promise<GeolocationPosition>((resolve, reject) =>
     navigator.geolocation.getCurrentPosition(resolve, reject, {
       enableHighAccuracy: false,
@@ -60,7 +81,7 @@ async function resolveLocality(): Promise<string> {
     data.city || data.principalSubdivision || null,
   ].filter(Boolean);
   if (parts.length === 0) throw new Error("no locality");
-  return parts.join(", ");
+  return { label: parts.join(", "), lat, lng };
 }
 
 /**
@@ -94,7 +115,7 @@ export function ScanNodeContent() {
       </p>
       {locality ? (
         <>
-          <p className="mt-0.5 text-title-2 text-ink">{locality}</p>
+          <p className="mt-0.5 text-title-2 text-ink">{locality.label}</p>
           <p className="mt-1 text-meta font-medium text-ink">Observed</p>
         </>
       ) : (
