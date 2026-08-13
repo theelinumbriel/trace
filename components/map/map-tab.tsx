@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { TraceEvent } from "@/lib/schemas/api";
 import { useTrace } from "@/components/trace/use-trace";
 import { TraceProgress } from "@/components/trace/trace-progress";
@@ -64,13 +64,14 @@ export function MapTab({ gtin, lot }: { gtin: string; lot: string | null }) {
   const { view, running } = useTrace(gtin, lot);
   const [selected, setSelected] = useState<TraceEvent | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [scan, setScan] = useState<StoredLocality | null>(null);
-  const [webgl, setWebgl] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    setScan(readStoredLocality());
-    setWebgl(webgl2Available());
-  }, []);
+  // Lazy init: this component renders only after client-side data loads,
+  // so reading browser state during render can't mismatch SSR HTML.
+  const [scan] = useState<StoredLocality | null>(() =>
+    typeof window === "undefined" ? null : readStoredLocality(),
+  );
+  const [webgl] = useState<boolean | null>(() =>
+    typeof window === "undefined" ? null : webgl2Available(),
+  );
 
   if (running || !view) {
     return (

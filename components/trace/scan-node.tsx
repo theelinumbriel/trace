@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -36,10 +36,12 @@ export function useLocality(): [
   StoredLocality | null,
   (v: StoredLocality) => void,
 ] {
-  const [locality, setLocality] = useState<StoredLocality | null>(null);
-  useEffect(() => {
-    setLocality(readStoredLocality());
-  }, []);
+  // Lazy init from localStorage is safe here: this component only mounts
+  // after client-side trace data resolves, so there is no SSR HTML to
+  // mismatch against.
+  const [locality, setLocality] = useState<StoredLocality | null>(() =>
+    typeof window === "undefined" ? null : readStoredLocality(),
+  );
   const save = (v: StoredLocality) => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(v));
     setLocality(v);

@@ -33,6 +33,8 @@ export function Scanner() {
   const [manualOpen, setManualOpen] = useState(false);
   const [batchChip, setBatchChip] = useState(false);
   const invalidAt = useRef(0);
+  // onDetect needs resume(), which useScanner returns; break the cycle.
+  const resumeRef = useRef<() => void>(() => {});
 
   const onInvalid = useCallback(() => {
     const now = Date.now();
@@ -85,7 +87,7 @@ export function Scanner() {
             setPhase({ kind: "idle" });
             setChip(null);
             setBatchChip(false);
-            resume();
+            resumeRef.current();
           }, 2600);
           return;
         }
@@ -94,10 +96,9 @@ export function Scanner() {
         toast("You're offline — reconnect and try again.");
         setPhase({ kind: "idle" });
         setChip(null);
-        resume();
+        resumeRef.current();
       }
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [router],
   );
 
@@ -111,6 +112,10 @@ export function Scanner() {
     torchOn,
     toggleTorch,
   } = useScanner(onDetect, onInvalid);
+
+  useEffect(() => {
+    resumeRef.current = resume;
+  }, [resume]);
 
   useEffect(() => {
     start();
