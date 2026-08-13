@@ -1,6 +1,11 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import { ScanLine, Keyboard } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  ExampleTraces,
+  ExampleTracesSkeleton,
+} from "@/components/home/example-traces";
 
 export default function HomePage() {
   return (
@@ -31,6 +36,9 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
+      <Suspense fallback={<ExampleTracesSkeleton />}>
+        <ExampleTraces />
+      </Suspense>
     </div>
   );
 }
