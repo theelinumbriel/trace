@@ -92,8 +92,12 @@ export function Scanner() {
           return;
         }
         throw new Error(`lookup ${res.status}`);
-      } catch {
-        toast("You're offline — reconnect and try again.");
+      } catch (err) {
+        toast(
+          err instanceof TypeError
+            ? "You're offline — reconnect and try again."
+            : "The lookup service hit an error — try again in a moment.",
+        );
         setPhase({ kind: "idle" });
         setChip(null);
         resumeRef.current();
