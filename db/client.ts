@@ -21,6 +21,12 @@ async function createDb(): Promise<Db> {
     return drizzle(neon(url), { schema });
   }
 
+  if (process.env.VERCEL) {
+    throw new Error(
+      "DATABASE_URL is not set. Connect the Neon integration (Vercel → Storage → Neon) — see README.",
+    );
+  }
+
   // Dev fallback: file-backed PGlite (WASM Postgres) so `npm install &&
   // npm run dev` works with zero provisioning. Never used when DATABASE_URL
   // is set; production always runs hosted Postgres.
